@@ -1,0 +1,232 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body{
+    font-family: 'Arimo', sans-serif;
+}
+
+.ancho{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.verde{
+    color: #6cb500;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo1{
+    max-width: 200px;
+    margin: 0;
+}
+
+.logo1 img{
+    width: 100%;
+}
+
+.menu{
+    margin: 0px;
+    padding: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 500px;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border: 1px transparent solid;
+    transition: all 0.5s;
+}
+
+.menu ul li a:hover{
+    border: 1px #6cb500 solid;
+    border-radius: 5px;
+}
+
+.fondo{
+    background-image: url(imagenes/foto_slide.jpg);
+    height: 466px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo{
+    font-size: 35px;
+    color: white;
+    padding-right: 650px ;
+    padding-top: 100px;
+    padding-left: 60px;
+}
+
+.barras{
+    text-decoration: none;
+    color: #6cb500;
+    font-size: 35px;
+    display: none;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.titulo2 h3{
+    font-size: 25px;
+}
+
+.ganados{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.ganado{
+    max-width: 370px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px #f3f3f3 solid;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+
+.ganado figure{
+    max-width: 120px;
+    margin: 0;
+}
+
+.ganado figure img{
+    width: 100%;
+}
+
+.ganado p{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.titulo3{
+    font-size: 18px;
+}
+
+.pie{
+    background-color: #6cb500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.pie figure{
+    max-width: 180px;
+    margin: 0;
+}
+
+.pie figure img{
+    width: 100%;
+}
+
+@media screen and (max-width: 414px) {
+    .ancho{
+        max-width: 414px;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .cabecera{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .menu{
+        display: none;
+        width: 100%;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        border: 1px #f3f3f3 solid;
+        background-color: #f3f3f3;
+        border-radius: 5px ;
+    }
+    
+    .menu ul li{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .menu ul li a{
+        display: block;
+        padding: 10px 20px;
+        border: 1px transparent solid;
+        border-bottom: 2px black dotted;
+    }
+
+    .menu.abrirmenu {
+        width: 100%;
+      }
+
+    .barras{
+        display: block;
+    }
+
+    .fondo{
+        background-position-x:-500px ;
+    }
+
+    .titulo{
+        font-size: 30px;
+        color: white;
+        padding-right: 30px ;
+        padding-top: 140px;
+        padding-left: 30px;
+        line-height: 45px;
+    }
+}
